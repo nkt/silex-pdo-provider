@@ -17,7 +17,7 @@ class PDOServiceProvider implements ServiceProviderInterface
         $app['pdo.dsn'] = 'sqlite::memory:';
         $app['pdo.username'] = '';
         $app['pdo.password'] = '';
-        $app['pdo.attributes'] = [];
+        $app['pdo.attributes'] = array();
         $app['pdo.class_name'] = 'PDO';
 
         $app['db'] = $app->share(function ($app) {
